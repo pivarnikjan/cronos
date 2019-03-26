@@ -18,7 +18,7 @@ PASSWD_DIR = os.path.join(os.path.dirname(BASE_DIR), 'credentials', '.conf.ini')
 
 settings = configparser.ConfigParser()
 settings.read(PASSWD_DIR)
-API_KEY = settings.get("COINMARKETCAP", "KEY")
+CMC_API_KEY = settings.get("COINMARKETCAP", "KEY")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
